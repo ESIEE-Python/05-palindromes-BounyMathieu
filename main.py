@@ -1,6 +1,6 @@
 #### Fonction secondaire
 '''
-Fonction Palyndromes
+Fonction Palindromes
 '''
 
 def ispalindrome(s):
@@ -10,21 +10,21 @@ def ispalindrome(s):
     Args:
         s : chaine de caracteres
     Returns:
-        ispalyndrome(s) : 's est un palyndrome' / 's n'est pas un palyndrome'
+        ispalindrome(s) : 's est un palindrome' / 's n'est pas un palindrome'
     '''
     if len(s)<=1:
-        return(s, 'est un palyndrome')
+        return(s, 'est un palindrome')
     for i in range (len(s)//2):
         if s[i]!=s[-(i+1)]:
-            return (s,"n'est pas un palyndrome")
-    return (s,'est un palyndrome')
+            return (s,"n'est pas un palindrome")
+    return (s,'est un palindrome')
     # votre code ici
 #### Fonction principale
 
 
 def main():
     '''
-    Détermine si la fonction ispalyndrome() fonctionne bien pour les mots suivants :
+    Détermine si la fonction ispalindrome() fonctionne bien pour les mots suivants :
     "radar", 
     "kayak", 
     "level", 
